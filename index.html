@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>牛客岗位匹配看板</title>
+<style>
+:root{--paper:#f4f5ee;--panel:#fff;--ink:#17261f;--muted:#526559;--line:#d6dfd4;--green:#1c6047;--soft:#dceee1;--sand:#f6ead2}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 "Inter","PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+.wrap{max-width:1160px;margin:auto;padding-inline:clamp(16px,4vw,48px)}
+header{background:#173d30;color:#f9fff8;padding:46px 0 37px}
+.hero{display:grid;grid-template-columns:1fr auto;align-items:end;gap:22px}
+h1{font-size:clamp(31px,5vw,55px);line-height:1.15;letter-spacing:-.045em;margin:8px 0 13px}
+header p{margin:0;color:#d0e4d8}time{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:13px;letter-spacing:.15em;color:#c3e1ce}.date{text-align:right}
+main{padding-block:24px 48px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:26px}
+.metric{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:var(--muted)}
+.metric strong{display:block;font-size:29px;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--ink)}
+.controls{display:flex;flex-wrap:wrap;align-items:end;gap:12px;padding:16px 0 13px;border-top:1px solid var(--line)}
+label{display:grid;gap:4px;color:var(--muted);font-size:13px}select,input,button,.action{font:inherit}
+select,input[type=number],button,.action{padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+input[type=number]{width:84px}button,.action{cursor:pointer}button:disabled{cursor:default;color:var(--muted);background:#f2f4f0}
+label.toggle{display:flex;align-items:center;min-height:37px;font-size:14px}input{accent-color:var(--green)}
+.toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:9px 0 15px;color:var(--muted)}
+.toolbar p{margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+article{display:flex;flex-direction:column;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 19px}
+article h2{font-size:19px;line-height:1.4;margin:1px 0;overflow-wrap:anywhere}article p{margin:0;overflow-wrap:anywhere}
+.cardhead{display:grid;grid-template-columns:1fr auto;align-items:start;gap:9px}.meta{font-size:13px;color:var(--muted)}
+.score{font-size:21px;min-width:48px;text-align:center;background:#edf0eb;padding:4px 8px;border-radius:8px;font-weight:700}
+.high .score{color:#104632;background:var(--soft)}.detail{display:grid;gap:6px;margin-bottom:3px;font-size:14px}
+.detail b{font-size:12px;color:var(--muted);margin-right:8px}.gap{color:#704519}
+.actions{border-top:1px solid var(--line);padding-top:13px;margin-top:auto;display:flex;flex-wrap:wrap;align-items:end;gap:9px}
+.action{text-decoration:none;font-weight:620;background:var(--green);color:#fff;border-color:var(--green)}.action.secondary{color:var(--green);background:#fff}
+.actions label{margin-left:auto}.empty{grid-column:1/-1;padding:22px;border:1px dashed var(--line);border-radius:12px}footer{margin-top:23px;color:var(--muted);font-size:13px}
+summary{cursor:pointer}
+
+@media(max-width:710px){.grid,.hero{grid-template-columns:1fr}.date{text-align:left}header{padding:30px 0 26px}.metrics{gap:6px}.metric{padding:10px;font-size:12px}.metric strong{font-size:23px}.toolbar{align-items:start}}
+</style>
+</head>
+<body>
+<header><div class="wrap hero">
+  <div><div class="eyebrow">牛客 · 求职看板</div><h1>牛客岗位匹配</h1><p>根据简历关键词匹配公开 JD。70 分起进入投递清单。</p></div>
+  <p class="date">最后更新时间<br><time id="updated">读取中</time></p>
+</div></header>
+<main class="wrap">
+  <section class="metrics" aria-label="岗位概览">
+    <div class="metric"><strong id="total">—</strong>本批岗位</div>
+    <div class="metric"><strong id="qualified">—</strong>达到 70 分</div>
+    <div class="metric"><strong id="submitted">—</strong>本批已投递</div>
+  </section>
+  <section class="controls" aria-label="筛选及排序">
+    <label>地点<select id="city"><option value="">全部地点</option></select></label>
+    <label>企业<select id="company"><option value="">全部企业</option></select></label>
+    <label>最低匹配分<input id="minScore" type="number" min="0" max="100" value="0"></label>
+    <label>投递状态<select id="status"><option value="">全部状态</option></select></label>
+    <label>排序<select id="sort"><option value="score-down">匹配分从高到低</option><option value="score-up">匹配分从低到高</option><option value="city">地点</option><option value="company">企业</option></select></label>
+    <label class="toggle"><input id="queue" type="checkbox" checked> 仅看投递清单</label>
+  </section>
+  <div class="toolbar"><p id="notice" aria-live="polite">正在读取岗位…</p><button id="reset">重置筛选</button></div>
+  <section class="grid" id="cards" aria-label="岗位列表"></section>
+  <footer><details><summary>匹配和投递状态说明</summary><p>评分基于岗位标题、JD 能力覆盖和资料差距。请在牛客核对毕业届别、在岗时长和最新开放状态。「一键投递」打开牛客岗位页，请点击「立即申请」，选择推荐简历并手动提交。状态由你手动更新，保存在当前浏览器。</p></details><p id="storageMessage" role="status"></p></footer>
+</main>
+<!-- JOBS_SNAPSHOT -->
+<script>
+'use strict';
+const byId = id => document.getElementById(id);
+const states = {new: '未投递', done: '已投递', skipped: '跳过', failed: '失败'};
+const collator = new Intl.Collator('zh-Hans');
+const prefix = 'nowcoder-board:v1:' + location.pathname.replace(/index\.html$/, '') + ':';
+const fallback = new Map();
+let data;
+
+function statusFor(id) {
+  if (fallback.has(id)) return fallback.get(id);
+  try { return localStorage.getItem(prefix + id) || 'new'; }
+  catch { return 'new'; }
+}
+
+function save(id, status) {
+  try { localStorage.setItem(prefix + id, status); }
+  catch {
+    fallback.set(id, status);
+    byId('storageMessage').textContent = '浏览器存储不可用。本次更新仅在当前页面有效。';
+  }
+}
+
+function el(tag, text, className) {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+
+function option(value, label) { return new Option(label, value); }
+function fill(id, values) {
+  for (const value of [...new Set(values)].sort(collator.compare)) byId(id).add(option(value, value));
+}
+
+function card(job) {
+  const current = statusFor(job.id);
+  const qualified = job.score >= data.threshold;
+  const article = el('article', undefined, qualified ? 'high' : '');
+  const head = el('div', undefined, 'cardhead');
+  const name = el('div');
+  name.append(el('p', [job.company, job.cities.join(' / '), job.type].join(' · '), 'meta'), el('h2', job.title));
+  const points = el('span', job.score, 'score');
+  points.setAttribute('aria-label', '匹配分 ' + job.score);
+  head.append(name, points);
+  const details = el('div', undefined, 'detail');
+  for (const [label, value, className] of [
+    ['匹配理由', job.reasons.join('、') || 'JD 与已有技能关键词重合较少'],
+    ['差距关键词', job.gaps.join('、') || '暂无识别项', 'gap'],
+    ['推荐简历', job.resume]
+  ]) {
+    const row = el('p', undefined, className);
+    row.append(el('b', label), document.createTextNode(value));
+    details.append(row);
+  }
+
+  const actions = el('div', undefined, 'actions');
+  const finished = ['done', 'skipped'].includes(current);
+  if (finished) {
+    const button = el('button', states[current]);
+    button.disabled = true;
+    actions.append(button);
+  } else {
+    const apply = el('a', '一键投递', qualified ? 'action' : 'action secondary');
+    apply.href = job.url;
+    apply.target = '_blank';
+    apply.rel = 'noopener noreferrer';
+    apply.title = '打开牛客后，选择' + job.resume + '并手动提交';
+    actions.append(apply);
+  }
+  if (finished) {
+    const link = el('a', '查看 JD', 'action secondary');
+    link.href = job.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    actions.append(link);
+  }
+  const label = el('label', '投递状态');
+  const select = el('select');
+  select.setAttribute('aria-label', job.title + '的投递状态');
+  for (const [value, text] of Object.entries(states)) select.add(option(value, text));
+  select.value = current;
+  select.addEventListener('change', () => { save(job.id, select.value); render(); });
+  label.append(select);
+  actions.append(label);
+  article.append(head, details, actions);
+  return article;
+}
+
+function render() {
+  if (!data) return;
+  const city = byId('city').value;
+  const company = byId('company').value;
+  const status = byId('status').value;
+  const sort = byId('sort').value;
+  const queue = byId('queue').checked;
+  const minScore = Math.max(Number(byId('minScore').value) || 0, queue ? data.threshold : 0);
+  const jobs = data.jobs.filter(job =>
+    job.score >= minScore && (!city || job.cities.includes(city)) &&
+    (!company || job.company === company) && (!status || statusFor(job.id) === status)
+  );
+  const compare = {
+    'score-down': (a, b) => b.score - a.score,
+    'score-up': (a, b) => a.score - b.score,
+    city: (a, b) => collator.compare(a.cities[0], b.cities[0]),
+    company: (a, b) => collator.compare(a.company, b.company)
+  };
+  jobs.sort(compare[sort]);
+  byId('notice').textContent = '显示 ' + jobs.length + ' 个岗位' +
+    (data.jobs.length < data.target ? ' · 本批可用岗位少于 ' + data.target + ' 个' : '');
+  byId('submitted').textContent = data.jobs.filter(job => statusFor(job.id) === 'done').length;
+  byId('cards').replaceChildren(...(jobs.length ? jobs.map(card) : [el('p', '没有符合筛选条件的岗位。', 'empty')]));
+}
+
+async function start() {
+  const snapshot = byId('snapshot');
+  if (snapshot) data = JSON.parse(snapshot.textContent);
+  else {
+    const response = await fetch('jobs.json', {cache: 'no-store'});
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    data = await response.json();
+  }
+  data.jobs = data.jobs.filter(job => /^\d+$/.test(job.id) && job.url === 'https://www.nowcoder.com/jobs/detail/' + job.id);
+  byId('updated').dateTime = data.updatedAt;
+  byId('updated').textContent = new Intl.DateTimeFormat('zh-CN', {
+    timeZone: 'Asia/Hong_Kong', dateStyle: 'medium', timeStyle: 'short'
+  }).format(new Date(data.updatedAt)) + ' 香港时间';
+  byId('total').textContent = data.jobs.length;
+  byId('qualified').textContent = data.jobs.filter(job => job.score >= data.threshold).length;
+  fill('company', data.jobs.map(job => job.company));
+  fill('city', data.jobs.flatMap(job => job.cities));
+  for (const [value, text] of Object.entries(states)) byId('status').add(option(value, text));
+  document.querySelector('.controls').addEventListener('input', render);
+  byId('reset').addEventListener('click', () => {
+    for (const id of ['city', 'company', 'status']) byId(id).value = '';
+    byId('minScore').value = '0';
+    byId('sort').value = 'score-down';
+    byId('queue').checked = true;
+    render();
+  });
+  window.addEventListener('storage', render);
+  render();
+}
+
+start().catch(() => {
+  byId('updated').textContent = '未能读取';
+  byId('notice').textContent = '岗位数据加载失败，请刷新页面。';
+});
+</script>
+</body>
+</html>

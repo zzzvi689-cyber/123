@@ -1,0 +1,445 @@
+{
+  "updatedAt": "2026-11-15T16:42:20.936Z",
+  "target": 20,
+  "threshold": 70,
+  "sourcesRead": 8,
+  "jobs": [
+    {
+      "id": "30300000145932",
+      "title": "市场培训生（内容运营-深圳）",
+      "company": "大疆",
+      "cities": [
+        "深圳"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/30300000145932",
+      "score": 93,
+      "reasons": [
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "拍摄与剪辑",
+        "海外内容本地化",
+        "数据复盘",
+        "英语沟通"
+      ],
+      "gaps": [
+        "海外社媒运营",
+        "AI／AIGC 工作流"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "462527",
+      "title": "校招-内容赋能（保险培训）",
+      "company": "水滴",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/462527",
+      "score": 89,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "拍摄与剪辑",
+        "数据复盘",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "独立运营小红书",
+        "SQL／Python",
+        "AI／AIGC 工作流"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "465042",
+      "title": "短视频编导（成都）-2027校招",
+      "company": "途游游戏",
+      "cities": [
+        "成都"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/465042",
+      "score": 89,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "拍摄与剪辑"
+      ],
+      "gaps": [
+        "抖音账号实操",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "470348",
+      "title": "文化运营【2027届秋招】(J72858)",
+      "company": "贝壳找房",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/470348",
+      "score": 88,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "数据复盘",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "预算管理",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "471704",
+      "title": "企业文化专员-深圳",
+      "company": "安克创新",
+      "cities": [
+        "深圳"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/471704",
+      "score": 88,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）",
+        "按 JD 准备作品集"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "460623",
+      "title": "内容运营",
+      "company": "快手",
+      "cities": [
+        "深圳",
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/460623",
+      "score": 87,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "数据复盘",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "464425",
+      "title": "内容运营（成都）-2027校招",
+      "company": "途游游戏",
+      "cities": [
+        "成都"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/464425",
+      "score": 87,
+      "reasons": [
+        "中文与传媒",
+        "公众号与视频号",
+        "拍摄与剪辑",
+        "数据复盘",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "抖音账号实操",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "456578",
+      "title": "海外短视频运营（TikTok/Instagram/YouTube）",
+      "company": "深圳市方寸灵诺科技有限公司",
+      "cities": [
+        "深圳"
+      ],
+      "type": "社招",
+      "url": "https://www.nowcoder.com/jobs/detail/456578",
+      "score": 84,
+      "reasons": [
+        "内容策划与采编",
+        "文案与品牌传播",
+        "拍摄与剪辑",
+        "跨团队协作",
+        "英语沟通"
+      ],
+      "gaps": [
+        "海外社媒运营",
+        "AI／AIGC 工作流",
+        "行业或岗位年限"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "453092",
+      "title": "海外短视频运营实习生（TikTok/Instagram/YouTube）",
+      "company": "深圳市方寸灵诺科技有限公司",
+      "cities": [
+        "深圳"
+      ],
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/453092",
+      "score": 82,
+      "reasons": [
+        "内容策划与采编",
+        "拍摄与剪辑",
+        "数据复盘",
+        "英语沟通"
+      ],
+      "gaps": [
+        "海外社媒运营",
+        "AI／AIGC 工作流"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "463495",
+      "title": "内容编导【实习】(J72288)",
+      "company": "贝壳找房",
+      "cities": [
+        "北京"
+      ],
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/463495",
+      "score": 82,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "拍摄与剪辑"
+      ],
+      "gaps": [
+        "AI／AIGC 工作流"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "462541",
+      "title": "校招-小红书内容运营（AI 内容方向）",
+      "company": "水滴",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/462541",
+      "score": 81,
+      "reasons": [
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "数据复盘",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "独立运营小红书",
+        "抖音账号实操",
+        "SQL／Python",
+        "AI／AIGC 工作流",
+        "投放／转化增长"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "462562",
+      "title": "校招-短视频运营",
+      "company": "水滴",
+      "cities": [
+        "深圳"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/462562",
+      "score": 81,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "公众号与视频号",
+        "拍摄与剪辑",
+        "数据复盘"
+      ],
+      "gaps": [
+        "独立运营小红书",
+        "抖音账号实操",
+        "AI／AIGC 工作流",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "467583",
+      "title": "游戏内容营销（北京）-2027校招",
+      "company": "途游游戏",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/467583",
+      "score": 81,
+      "reasons": [
+        "文案与品牌传播",
+        "拍摄与剪辑",
+        "数据复盘"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "459689",
+      "title": "市场活动策划实习生（科技展会）",
+      "company": "深圳市方寸灵诺科技有限公司",
+      "cities": [
+        "深圳"
+      ],
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/459689",
+      "score": 71,
+      "reasons": [
+        "文案与品牌传播",
+        "数据复盘"
+      ],
+      "gaps": [],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "475012",
+      "title": "行政-员工体验管培生（员工体验与文化建设方向）-2027校招",
+      "company": "途游游戏",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/475012",
+      "score": 66,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "数据复盘",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "预算管理",
+        "人力或员工关系实操",
+        "核对毕业届别（2027 届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "475037",
+      "title": "行政-综合管理管培生（COE方向）-2027校招",
+      "company": "途游游戏",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/475037",
+      "score": 48,
+      "reasons": [
+        "数据复盘",
+        "跨团队协作",
+        "Office 办公"
+      ],
+      "gaps": [
+        "预算管理",
+        "核对毕业届别（2027 届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "473690",
+      "title": "CAE仿真工程师-深圳",
+      "company": "安克创新",
+      "cities": [
+        "深圳"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/473690",
+      "score": 36,
+      "reasons": [
+        "内容策划与采编"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "473689",
+      "title": "电机结构工程师-深圳/上海",
+      "company": "安克创新",
+      "cities": [
+        "深圳"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/473689",
+      "score": 18,
+      "reasons": [
+        "跨团队协作"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "471851",
+      "title": "结构设计实习生",
+      "company": "深圳市方寸灵诺科技有限公司",
+      "cities": [
+        "深圳"
+      ],
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/471851",
+      "score": 0,
+      "reasons": [],
+      "gaps": [
+        "该方向的专业技术或设计经历"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "473762",
+      "title": "后端开发工程师（广州）-2027校招",
+      "company": "途游游戏",
+      "cities": [
+        "广州"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/473762",
+      "score": 0,
+      "reasons": [],
+      "gaps": [
+        "SQL／Python",
+        "核对毕业届别（2027届）",
+        "该方向的专业技术或设计经历"
+      ],
+      "resume": "内容与传播版"
+    }
+  ]
+}
