@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T16:42:20.936Z",
+  "updatedAt": "2026-11-15T16:46:16.658Z",
   "target": 20,
   "threshold": 70,
   "sourcesRead": 8,
@@ -52,29 +52,6 @@
         "独立运营小红书",
         "SQL／Python",
         "AI／AIGC 工作流"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "465042",
-      "title": "短视频编导（成都）-2027校招",
-      "company": "途游游戏",
-      "cities": [
-        "成都"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/465042",
-      "score": 89,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编",
-        "文案与品牌传播",
-        "公众号与视频号",
-        "拍摄与剪辑"
-      ],
-      "gaps": [
-        "抖音账号实操",
-        "核对毕业届别（2027届）"
       ],
       "resume": "内容与传播版"
     },
@@ -147,24 +124,83 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "464425",
-      "title": "内容运营（成都）-2027校招",
-      "company": "途游游戏",
+      "id": "475222",
+      "title": "内容策略运营（新媒体IP方向）【2027届秋招】(J73176)",
+      "company": "贝壳找房",
       "cities": [
-        "成都"
+        "北京"
       ],
       "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/464425",
+      "url": "https://www.nowcoder.com/jobs/detail/475222",
       "score": 87,
       "reasons": [
         "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
         "公众号与视频号",
         "拍摄与剪辑",
-        "数据复盘",
-        "跨团队协作"
+        "海外内容本地化",
+        "数据复盘"
       ],
       "gaps": [
+        "独立运营小红书",
         "抖音账号实操",
+        "核对毕业届别（2027届）",
+        "按 JD 准备作品集"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "473763",
+      "title": "内容策略运营（AIGC方向）【实习】(J72999)",
+      "company": "贝壳找房",
+      "cities": [
+        "北京"
+      ],
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/473763",
+      "score": 86,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "数据复盘",
+        "跨团队协作",
+        "Office 办公"
+      ],
+      "gaps": [
+        "独立运营小红书",
+        "抖音账号实操",
+        "SQL／Python",
+        "AI／AIGC 工作流"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "474079",
+      "title": "内容策略运营（AIGC方向）【2027届秋招】(J73048)",
+      "company": "贝壳找房",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/474079",
+      "score": 86,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号",
+        "数据复盘",
+        "跨团队协作",
+        "Office 办公"
+      ],
+      "gaps": [
+        "独立运营小红书",
+        "抖音账号实操",
+        "SQL／Python",
+        "AI／AIGC 工作流",
         "核对毕业届别（2027届）"
       ],
       "resume": "内容与传播版"
@@ -211,26 +247,6 @@
       ],
       "gaps": [
         "海外社媒运营",
-        "AI／AIGC 工作流"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "463495",
-      "title": "内容编导【实习】(J72288)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/463495",
-      "score": 82,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编",
-        "拍摄与剪辑"
-      ],
-      "gaps": [
         "AI／AIGC 工作流"
       ],
       "resume": "内容与传播版"
@@ -287,24 +303,23 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "467583",
-      "title": "游戏内容营销（北京）-2027校招",
-      "company": "途游游戏",
+      "id": "473760",
+      "title": "内容产品经理（AI方向）【实习】(J72998)",
+      "company": "贝壳找房",
       "cities": [
         "北京"
       ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/467583",
-      "score": 81,
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/473760",
+      "score": 76,
       "reasons": [
-        "文案与品牌传播",
-        "拍摄与剪辑",
-        "数据复盘"
+        "中文与传媒",
+        "内容策划与采编"
       ],
       "gaps": [
-        "核对毕业届别（2027届）"
+        "AI／AIGC 工作流"
       ],
-      "resume": "营销储干／商品版"
+      "resume": "内容与传播版"
     },
     {
       "id": "459689",
@@ -322,6 +337,26 @@
       ],
       "gaps": [],
       "resume": "营销储干／商品版"
+    },
+    {
+      "id": "474074",
+      "title": "内容产品经理（AI方向）【2027届秋招】(J73047)",
+      "company": "贝壳找房",
+      "cities": [
+        "北京"
+      ],
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/474074",
+      "score": 69,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编"
+      ],
+      "gaps": [
+        "AI／AIGC 工作流",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
     },
     {
       "id": "475012",
@@ -349,95 +384,82 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "475037",
-      "title": "行政-综合管理管培生（COE方向）-2027校招",
-      "company": "途游游戏",
+      "id": "475069",
+      "title": "精装设计师（产品研究方向）【实习】(J73145)",
+      "company": "贝壳找房",
+      "cities": [
+        "北京"
+      ],
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/475069",
+      "score": 64,
+      "reasons": [
+        "文案与品牌传播",
+        "公众号与视频号",
+        "数据复盘",
+        "Office 办公"
+      ],
+      "gaps": [
+        "AI／AIGC 工作流"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "475095",
+      "title": "数据产品经理（客户经营方向）【实习】(J73147)",
+      "company": "贝壳找房",
+      "cities": [
+        "北京"
+      ],
+      "type": "实习",
+      "url": "https://www.nowcoder.com/jobs/detail/475095",
+      "score": 39,
+      "reasons": [
+        "数据复盘",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "SQL／Python",
+        "硕士毕业或学历要求"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "475293",
+      "title": "AI应用工程师（FDE方向）【2027届秋招】(J73187)",
+      "company": "贝壳找房",
       "cities": [
         "北京"
       ],
       "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/475037",
-      "score": 48,
+      "url": "https://www.nowcoder.com/jobs/detail/475293",
+      "score": 39,
       "reasons": [
         "数据复盘",
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "预算管理",
-        "核对毕业届别（2027 届）"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "473690",
-      "title": "CAE仿真工程师-深圳",
-      "company": "安克创新",
-      "cities": [
-        "深圳"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/473690",
-      "score": 36,
-      "reasons": [
-        "内容策划与采编"
-      ],
-      "gaps": [
-        "硕士毕业或学历要求",
-        "核对毕业届别（2027届）"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "473689",
-      "title": "电机结构工程师-深圳/上海",
-      "company": "安克创新",
-      "cities": [
-        "深圳"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/473689",
-      "score": 18,
-      "reasons": [
         "跨团队协作"
       ],
       "gaps": [
-        "硕士毕业或学历要求",
+        "AI／AIGC 工作流",
         "核对毕业届别（2027届）"
       ],
       "resume": "内容与传播版"
     },
     {
-      "id": "471851",
-      "title": "结构设计实习生",
-      "company": "深圳市方寸灵诺科技有限公司",
+      "id": "475295",
+      "title": "AI应用工程师（FDE方向）【实习】(J73188)",
+      "company": "贝壳找房",
       "cities": [
-        "深圳"
+        "北京"
       ],
       "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/471851",
-      "score": 0,
-      "reasons": [],
-      "gaps": [
-        "该方向的专业技术或设计经历"
+      "url": "https://www.nowcoder.com/jobs/detail/475295",
+      "score": 39,
+      "reasons": [
+        "数据复盘",
+        "跨团队协作"
       ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "473762",
-      "title": "后端开发工程师（广州）-2027校招",
-      "company": "途游游戏",
-      "cities": [
-        "广州"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/473762",
-      "score": 0,
-      "reasons": [],
       "gaps": [
-        "SQL／Python",
-        "核对毕业届别（2027届）",
-        "该方向的专业技术或设计经历"
+        "AI／AIGC 工作流"
       ],
       "resume": "内容与传播版"
     }
