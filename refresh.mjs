@@ -8,6 +8,18 @@ const host = 'https://www.nowcoder.com';
 const target = 20;
 const threshold = 70;
 const titleFocus = /内容|新媒体|短剧|短视频|视频运营|编导|编辑|文案|本地化|市场|营销|商品|公关|品牌|企业文化|文化运营|海外运营/;
+const publicAffairs = /政府事务|政府关系|公共事务|政企关系|政务公关|政企公关|政务关系|\bGR\b/i;
+const marketing = /营销|市场(?!研究员)|品牌|商品/;
+const functionRole = /行政|文秘|党群|党工|党建|宣传|综合管理|企业文化|文化运营|员工体验|人力资源/;
+
+function direction(title, company) {
+  if (publicAffairs.test(title)) return '政府事务／公共事务';
+  if (/公关|媒体关系|公共关系/.test(title)) return '公关';
+  if (functionRole.test(title) && /中国联通|中国移动|中国电信/.test(company)) return '国央企职能';
+  if (functionRole.test(title)) return '职能岗';
+  if (marketing.test(title)) return '市场营销';
+  return '其他';
+}
 const technicalTitle = /算法工程师|研发工程师|开发工程师|测试工程师|数据工程师|架构师|软件工程师|视觉设计|结构设计|景观设计|建筑设计/;
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const now = new Date();
@@ -64,32 +76,42 @@ const gaps = [
   ['行业或岗位年限', /[一二三四五六七八九1-9]\s*年(?:以上|及以上|相关|经验|工作)/]
 ];
 
-function score(jobTitle, duties, requirements, graduationYear) {
+function score(jobTitle, duties, requirements, graduationYear, track) {
   const jd = duties + '\n' + requirements;
   const relevant = rules.filter(([, pattern]) => pattern.test(jd));
   const matched = relevant.filter(([label]) => profile.skills.includes(label));
   const missing = [...relevant.filter(([label]) => !profile.skills.includes(label)).map(([label]) => label),
     ...gaps.filter(([, pattern]) => pattern.test(jd)).map(([label]) => label)];
   if (/硕士.*(?:毕业|及以上|以上)|研究生学历/.test(requirements)) missing.push('硕士毕业或学历要求');
-  const years = [...new Set((jobTitle + ' ' + graduationYear + ' ' + requirements).match(/20\d{2}\s*届/g) || [])];
-  if (years.length && !years.some(year => Number(year.slice(0, 4)) === profile.graduationYear)) {
+  if (/中共党员|党员优先/.test(requirements)) missing.push('核对政治面貌要求');
+  if (/公文写作|公文撰写|行文规范|综合材料/.test(jd)) missing.push('公文与综合材料写作');
+  if (publicAffairs.test(jobTitle)) {
+    for (const [term, pattern] of [
+      ['政策研究与解读', /政策|法规/],
+      ['政府部门对接', /政府|监管|主管部门/],
+      ['政务项目与申报', /申报|政务项目|政策项目/]
+    ]) if (pattern.test(jd)) missing.push(term);
+  }
+  const years = [...new Set((jobTitle + ' ' + graduationYear + ' ' + requirements).match(/(?:20)?\d{2}\s*届/g) || [])];
+  if (years.length && !years.some(year => Number(year.replace(/\D/g, '').padStart(4, '20')) === profile.graduationYear)) {
     missing.push('核对毕业届别（' + years.join('、') + '）');
   }
   const technical = technicalTitle.test(jobTitle);
-  const coreFit = titleFocus.test(jobTitle) && !technical;
+  const coreFit = (titleFocus.test(jobTitle) || track !== '其他') && !technical;
+  const preference = track === '国央企职能' ? 12 : ['政府事务／公共事务', '公关', '市场营销'].includes(track) ? 7 : track === '职能岗' ? 2 : -5;
   if (technical) missing.push('该方向的专业技术或设计经历');
   if (/作品集|作品链接/.test(requirements)) missing.push('按 JD 准备作品集');
   const covered = matched.reduce((sum, [, , weight]) => sum + weight, 0);
   const total = relevant.reduce((sum, [, , weight]) => sum + weight, 0);
-  const score = Math.max(0, Math.min(technical ? 59 : 100, Math.round(
+  const score = Math.max(0, Math.min(technical ? 59 : missing.length ? 96 : 100, Math.round(
     (coreFit ? 22 : 0) + 56 * covered / Math.max(covered + 7 * Math.min(missing.length, 4), total, 33)
-    + Math.min(22, 4 * matched.length)
+    + Math.min(22, 4 * matched.length) + preference
   )));
   return {
     score,
     reasons: matched.map(([label]) => label),
     gaps: missing,
-    resume: /营销|商品|市场|品牌|电商/.test(jobTitle) && !/内容运营|本地化|新媒体/.test(jobTitle)
+    resume: track === '市场营销'
       ? profile.versions.marketing : profile.versions.content
   };
 }
@@ -109,11 +131,12 @@ function parseJob(html, id) {
     throw new Error('公司或完整 JD 缺失');
   }
   const cities = job.jobCityList?.length ? job.jobCityList : [job.jobCity || job.jobName.match(/[（(]内容运营[-－]([^）)]+)[）)]/)?.[1] || '地点待核对'];
+  const track = direction(job.jobName, company);
   return {
-    id, title: job.jobName, company, cities,
+    id, title: job.jobName, company, cities, track,
     type: info.recruitTypeName?.[job.recruitType] || '招聘',
     url: host + '/jobs/detail/' + id,
-    ...score(job.jobName, duties, requirements, job.graduationYear || ''),
+    ...score(job.jobName, duties, requirements, job.graduationYear || '', track),
   };
 }
 
@@ -132,7 +155,8 @@ async function refresh() {
       if (!links.length) { console.warn('列表未返回可读职位链接'); continue; }
       sourcesRead++;
       for (const [, id, title] of links) {
-        const rank = titleFocus.test(title) && !technicalTitle.test(title) ? 3 : 0;
+        const preferred = direction(title, '') !== '其他';
+        const rank = technicalTitle.test(title) ? 0 : preferred ? 3 : titleFocus.test(title) ? 1 : 0;
         candidates.set(id, Math.max(candidates.get(id) ?? 0, rank));
       }
     } catch (error) {

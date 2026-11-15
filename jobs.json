@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-15T16:46:16.658Z",
+  "updatedAt": "2026-11-15T16:51:58.549Z",
   "target": 20,
   "threshold": 70,
-  "sourcesRead": 8,
+  "sourcesRead": 15,
   "jobs": [
     {
       "id": "30300000145932",
@@ -11,9 +11,10 @@
       "cities": [
         "深圳"
       ],
+      "track": "市场营销",
       "type": "校招",
       "url": "https://www.nowcoder.com/jobs/detail/30300000145932",
-      "score": 93,
+      "score": 96,
       "reasons": [
         "内容策划与采编",
         "文案与品牌传播",
@@ -27,33 +28,31 @@
         "海外社媒运营",
         "AI／AIGC 工作流"
       ],
-      "resume": "内容与传播版"
+      "resume": "营销储干／商品版"
     },
     {
-      "id": "462527",
-      "title": "校招-内容赋能（保险培训）",
-      "company": "水滴",
+      "id": "340432",
+      "title": "市场管培生（上海）2027届",
+      "company": "拼多多集团-PDD",
       "cities": [
-        "北京"
+        "上海"
       ],
+      "track": "市场营销",
       "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/462527",
-      "score": 89,
+      "url": "https://www.nowcoder.com/jobs/detail/340432",
+      "score": 94,
       "reasons": [
         "中文与传媒",
-        "内容策划与采编",
-        "文案与品牌传播",
-        "公众号与视频号",
         "拍摄与剪辑",
+        "海外内容本地化",
         "数据复盘",
         "跨团队协作"
       ],
       "gaps": [
-        "独立运营小红书",
-        "SQL／Python",
-        "AI／AIGC 工作流"
+        "投放／转化增长",
+        "核对毕业届别（2027届）"
       ],
-      "resume": "内容与传播版"
+      "resume": "营销储干／商品版"
     },
     {
       "id": "470348",
@@ -62,9 +61,10 @@
       "cities": [
         "北京"
       ],
+      "track": "职能岗",
       "type": "校招",
       "url": "https://www.nowcoder.com/jobs/detail/470348",
-      "score": 88,
+      "score": 90,
       "reasons": [
         "中文与传媒",
         "内容策划与采编",
@@ -85,9 +85,10 @@
       "cities": [
         "深圳"
       ],
+      "track": "职能岗",
       "type": "校招",
       "url": "https://www.nowcoder.com/jobs/detail/471704",
-      "score": 88,
+      "score": 90,
       "reasons": [
         "中文与传媒",
         "内容策划与采编",
@@ -98,263 +99,6 @@
       "gaps": [
         "核对毕业届别（2027届）",
         "按 JD 准备作品集"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "460623",
-      "title": "内容运营",
-      "company": "快手",
-      "cities": [
-        "深圳",
-        "北京"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/460623",
-      "score": 87,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编",
-        "数据复盘",
-        "跨团队协作"
-      ],
-      "gaps": [
-        "核对毕业届别（2027届）"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "475222",
-      "title": "内容策略运营（新媒体IP方向）【2027届秋招】(J73176)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/475222",
-      "score": 87,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编",
-        "文案与品牌传播",
-        "公众号与视频号",
-        "拍摄与剪辑",
-        "海外内容本地化",
-        "数据复盘"
-      ],
-      "gaps": [
-        "独立运营小红书",
-        "抖音账号实操",
-        "核对毕业届别（2027届）",
-        "按 JD 准备作品集"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "473763",
-      "title": "内容策略运营（AIGC方向）【实习】(J72999)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/473763",
-      "score": 86,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编",
-        "文案与品牌传播",
-        "公众号与视频号",
-        "数据复盘",
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "独立运营小红书",
-        "抖音账号实操",
-        "SQL／Python",
-        "AI／AIGC 工作流"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "474079",
-      "title": "内容策略运营（AIGC方向）【2027届秋招】(J73048)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/474079",
-      "score": 86,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编",
-        "文案与品牌传播",
-        "公众号与视频号",
-        "数据复盘",
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "独立运营小红书",
-        "抖音账号实操",
-        "SQL／Python",
-        "AI／AIGC 工作流",
-        "核对毕业届别（2027届）"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "456578",
-      "title": "海外短视频运营（TikTok/Instagram/YouTube）",
-      "company": "深圳市方寸灵诺科技有限公司",
-      "cities": [
-        "深圳"
-      ],
-      "type": "社招",
-      "url": "https://www.nowcoder.com/jobs/detail/456578",
-      "score": 84,
-      "reasons": [
-        "内容策划与采编",
-        "文案与品牌传播",
-        "拍摄与剪辑",
-        "跨团队协作",
-        "英语沟通"
-      ],
-      "gaps": [
-        "海外社媒运营",
-        "AI／AIGC 工作流",
-        "行业或岗位年限"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "453092",
-      "title": "海外短视频运营实习生（TikTok/Instagram/YouTube）",
-      "company": "深圳市方寸灵诺科技有限公司",
-      "cities": [
-        "深圳"
-      ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/453092",
-      "score": 82,
-      "reasons": [
-        "内容策划与采编",
-        "拍摄与剪辑",
-        "数据复盘",
-        "英语沟通"
-      ],
-      "gaps": [
-        "海外社媒运营",
-        "AI／AIGC 工作流"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "462541",
-      "title": "校招-小红书内容运营（AI 内容方向）",
-      "company": "水滴",
-      "cities": [
-        "北京"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/462541",
-      "score": 81,
-      "reasons": [
-        "内容策划与采编",
-        "文案与品牌传播",
-        "公众号与视频号",
-        "数据复盘",
-        "跨团队协作"
-      ],
-      "gaps": [
-        "独立运营小红书",
-        "抖音账号实操",
-        "SQL／Python",
-        "AI／AIGC 工作流",
-        "投放／转化增长"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "462562",
-      "title": "校招-短视频运营",
-      "company": "水滴",
-      "cities": [
-        "深圳"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/462562",
-      "score": 81,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编",
-        "公众号与视频号",
-        "拍摄与剪辑",
-        "数据复盘"
-      ],
-      "gaps": [
-        "独立运营小红书",
-        "抖音账号实操",
-        "AI／AIGC 工作流",
-        "核对毕业届别（2027届）"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "473760",
-      "title": "内容产品经理（AI方向）【实习】(J72998)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/473760",
-      "score": 76,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编"
-      ],
-      "gaps": [
-        "AI／AIGC 工作流"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "459689",
-      "title": "市场活动策划实习生（科技展会）",
-      "company": "深圳市方寸灵诺科技有限公司",
-      "cities": [
-        "深圳"
-      ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/459689",
-      "score": 71,
-      "reasons": [
-        "文案与品牌传播",
-        "数据复盘"
-      ],
-      "gaps": [],
-      "resume": "营销储干／商品版"
-    },
-    {
-      "id": "474074",
-      "title": "内容产品经理（AI方向）【2027届秋招】(J73047)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/474074",
-      "score": 69,
-      "reasons": [
-        "中文与传媒",
-        "内容策划与采编"
-      ],
-      "gaps": [
-        "AI／AIGC 工作流",
-        "核对毕业届别（2027届）"
       ],
       "resume": "内容与传播版"
     },
@@ -365,9 +109,10 @@
       "cities": [
         "北京"
       ],
+      "track": "职能岗",
       "type": "校招",
       "url": "https://www.nowcoder.com/jobs/detail/475012",
-      "score": 66,
+      "score": 90,
       "reasons": [
         "中文与传媒",
         "内容策划与采编",
@@ -384,59 +129,103 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "475069",
-      "title": "精装设计师（产品研究方向）【实习】(J73145)",
-      "company": "贝壳找房",
+      "id": "466539",
+      "title": "营销策划(A66668)",
+      "company": "九方云",
       "cities": [
-        "北京"
+        "上海"
       ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/475069",
-      "score": 64,
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/466539",
+      "score": 88,
+      "reasons": [
+        "中文与传媒",
+        "文案与品牌传播",
+        "数据复盘"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "470386",
+      "title": "海外营销职能",
+      "company": "宇通集团",
+      "cities": [
+        "郑州"
+      ],
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/470386",
+      "score": 88,
+      "reasons": [
+        "中文与传媒",
+        "文案与品牌传播",
+        "拍摄与剪辑"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "470359",
+      "title": "党工",
+      "company": "宇通集团",
+      "cities": [
+        "郑州"
+      ],
+      "track": "职能岗",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/470359",
+      "score": 82,
+      "reasons": [
+        "中文与传媒",
+        "文案与品牌传播",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "470382",
+      "title": "国内营销职能",
+      "company": "宇通集团",
+      "cities": [
+        "郑州"
+      ],
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/470382",
+      "score": 81,
+      "reasons": [
+        "中文与传媒",
+        "文案与品牌传播"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "464932",
+      "title": "行政管理",
+      "company": "CVTE",
+      "cities": [
+        "广州"
+      ],
+      "track": "职能岗",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/464932",
+      "score": 75,
       "reasons": [
         "文案与品牌传播",
-        "公众号与视频号",
-        "数据复盘",
-        "Office 办公"
-      ],
-      "gaps": [
-        "AI／AIGC 工作流"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "475095",
-      "title": "数据产品经理（客户经营方向）【实习】(J73147)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/475095",
-      "score": 39,
-      "reasons": [
-        "数据复盘",
-        "跨团队协作"
-      ],
-      "gaps": [
-        "SQL／Python",
-        "硕士毕业或学历要求"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "475293",
-      "title": "AI应用工程师（FDE方向）【2027届秋招】(J73187)",
-      "company": "贝壳找房",
-      "cities": [
-        "北京"
-      ],
-      "type": "校招",
-      "url": "https://www.nowcoder.com/jobs/detail/475293",
-      "score": 39,
-      "reasons": [
-        "数据复盘",
-        "跨团队协作"
+        "跨团队协作",
+        "英语沟通"
       ],
       "gaps": [
         "AI／AIGC 工作流",
@@ -445,21 +234,201 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "475295",
-      "title": "AI应用工程师（FDE方向）【实习】(J73188)",
-      "company": "贝壳找房",
+      "id": "475037",
+      "title": "行政-综合管理管培生（COE方向）-2027校招",
+      "company": "途游游戏",
       "cities": [
         "北京"
       ],
-      "type": "实习",
-      "url": "https://www.nowcoder.com/jobs/detail/475295",
-      "score": 39,
+      "track": "职能岗",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/475037",
+      "score": 72,
+      "reasons": [
+        "数据复盘",
+        "跨团队协作",
+        "Office 办公"
+      ],
+      "gaps": [
+        "预算管理",
+        "核对毕业届别（2027 届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "462513",
+      "title": "校招 - GR",
+      "company": "水滴",
+      "cities": [
+        "北京"
+      ],
+      "track": "政府事务／公共事务",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/462513",
+      "score": 59,
       "reasons": [
         "数据复盘",
         "跨团队协作"
       ],
       "gaps": [
-        "AI／AIGC 工作流"
+        "政策研究与解读",
+        "政府部门对接",
+        "政务项目与申报",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "470384",
+      "title": "海外营销管培生(售后方向)",
+      "company": "宇通集团",
+      "cities": [
+        "郑州"
+      ],
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/470384",
+      "score": 58,
+      "reasons": [
+        "海外内容本地化"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对毕业届别（2027 届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "470381",
+      "title": "国内营销管培生(售后方向)",
+      "company": "宇通集团",
+      "cities": [
+        "郑州"
+      ],
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/470381",
+      "score": 57,
+      "reasons": [
+        "文案与品牌传播"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对毕业届别（2027届、2027 届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "469769",
+      "title": "27届秋招-市场管培生",
+      "company": "完美世界",
+      "cities": [
+        "广州"
+      ],
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/469769",
+      "score": 50,
+      "reasons": [
+        "数据复盘"
+      ],
+      "gaps": [
+        "投放／转化增长",
+        "核对毕业届别（27届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "462465",
+      "title": "市场营销类",
+      "company": "厦门银行股份有限公司",
+      "cities": [
+        "宁德"
+      ],
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/462465",
+      "score": 47,
+      "reasons": [
+        "跨团队协作"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "470392",
+      "title": "国内营销管培生(销售方向)",
+      "company": "宇通集团",
+      "cities": [
+        "郑州"
+      ],
+      "track": "市场营销",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/470392",
+      "score": 47,
+      "reasons": [
+        "跨团队协作"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对毕业届别（2027 届）"
+      ],
+      "resume": "营销储干／商品版"
+    },
+    {
+      "id": "471213",
+      "title": "人力资源管理（培训课研）【2027届秋招】(J72940)",
+      "company": "贝壳找房",
+      "cities": [
+        "苏州"
+      ],
+      "track": "职能岗",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/471213",
+      "score": 42,
+      "reasons": [
+        "跨团队协作"
+      ],
+      "gaps": [
+        "核对毕业届别（2027届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "468407",
+      "title": "行政校招生（北京 校招）(J10461)",
+      "company": "新毅东",
+      "cities": [
+        "北京"
+      ],
+      "track": "职能岗",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/468407",
+      "score": 24,
+      "reasons": [],
+      "gaps": [],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "463831",
+      "title": "产品经理（27届校招）(J10219)",
+      "company": "中国联通-联通支付",
+      "cities": [
+        "北京"
+      ],
+      "track": "其他",
+      "type": "校招",
+      "url": "https://www.nowcoder.com/jobs/detail/463831",
+      "score": 13,
+      "reasons": [
+        "跨团队协作"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对毕业届别（27届）"
       ],
       "resume": "内容与传播版"
     }
