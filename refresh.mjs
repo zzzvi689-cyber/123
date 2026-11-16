@@ -5,7 +5,7 @@ const read = async name => JSON.parse(await readFile(fromRoot(name), 'utf8'));
 const sources = await read('sources.json');
 const profile = process.env.MATCH_PROFILE_JSON ? JSON.parse(process.env.MATCH_PROFILE_JSON) : await read('profile.json');
 const host = 'https://www.nowcoder.com';
-const target = 20;
+const target = 40;
 const threshold = 70;
 const titleFocus = /内容|新媒体|短剧|短视频|视频运营|编导|编辑|文案|本地化|市场|营销|商品|公关|品牌|企业文化|文化运营|海外运营/;
 const publicAffairs = /政府事务|政府关系|公共事务|政企关系|政务公关|政企公关|政务关系|\bGR\b/i;
@@ -35,7 +35,7 @@ async function get(url, rules = []) {
   const response = await fetch(parsed, {
     redirect: 'manual',
     signal: AbortSignal.timeout(16000),
-    headers: {'User-Agent': 'JobMatchBoard/1.0 (public job listings; 20 JDs per run)'}
+    headers: {'User-Agent': 'JobMatchBoard/1.0 (public job listings; 40 JDs per run)'}
   });
   if ([401, 403, 429].includes(response.status)) {
     throw new AccessBlocked('牛客返回 HTTP ' + response.status + '，本轮停止');
@@ -140,7 +140,32 @@ function parseJob(html, id) {
   };
 }
 
-async function refresh() {
+function readStateOwned(job) {
+  const deadline = /^\d{4}-\d{2}-\d{2}$/.test(job.deadline) ? job.deadline : null;
+  const today = new Intl.DateTimeFormat('sv-SE', {timeZone: 'Asia/Hong_Kong'}).format(now);
+  const duties = job.description || '';
+  const requirements = job.requirements || '';
+  if ((deadline && deadline < today) || (duties + requirements).trim().length < 30) return null;
+
+  const track = '国央企职能';
+  const location = job.city && !/^\d+(?:\.\d+)?$/.test(job.city) ? job.city : job.workLocation;
+  const match = score(job.title, duties, requirements + '\n' + (job.education || ''), job.batch || '', track);
+  const qualifications = requirements + '\n' + duties.split(/任职要求|岗位要求/).slice(1).join('\n');
+  if (/中共(?:预备)?党员|政治面貌[^。；]{0,30}党员/.test(qualifications) &&
+      !/党员[^。；，]{0,15}优先/.test(qualifications)) {
+    match.score = Math.min(match.score, 69);
+    match.gaps.push('党员资格先核实');
+  }
+  if (/专业(?:要求|限定)|仅限[^。；]{0,20}专业/.test(qualifications)) match.gaps.push('核对对口专业');
+  return {
+    id: job.id, title: job.title, company: job.company,
+    cities: [location || '地点待核对'], track, type: job.jobType || '校招',
+    url: job.url, source: 'nowclaw', deadline: job.deadline,
+    officialStatus: '官网在招待核对', ...match
+  };
+}
+
+async function collectPublicJobs(jobs) {
   const robots = await get(host + '/robots.txt');
   const blockedPaths = robots.split('\n').flatMap(line => {
     const match = line.match(/^Disallow\s*:\s*(\/[^\s#]*)/i);
@@ -165,8 +190,8 @@ async function refresh() {
     }
   }
   const ranked = [...candidates].sort((a, b) => b[1] - a[1] || b[0].length - a[0].length || b[0].localeCompare(a[0]));
-  const jobs = [];
-  for (const [id] of ranked.slice(0, 46)) {
+
+  for (const [id] of ranked.slice(0, target * 3)) {
     if (jobs.length === target) break;
     if (!/^\d+$/.test(id)) continue;
     try {
@@ -177,10 +202,26 @@ async function refresh() {
       console.warn('职位 ' + id + ' 读取失败', error.message);
     }
   }
+  return sourcesRead;
+}
+
+async function refresh() {
+  const pool = await read('soe-snapshot.json');
+  const jobs = pool.jobs.map(readStateOwned).filter(Boolean)
+    .sort((a, b) => b.score - a.score || a.company.localeCompare(b.company, 'zh-CN'))
+    .slice(0, target);
+  let sourcesRead = 0;
+  if (jobs.length < target) {
+    try { sourcesRead = await collectPublicJobs(jobs); }
+    catch (error) {
+      if (!jobs.length) throw error;
+      console.warn('公开来源读取失败：' + error.message);
+    }
+  }
   if (jobs.length === 0) throw new Error('本轮无有效岗位，保留上一批数据');
   const data = {
-    updatedAt: now.toISOString(), target, threshold, sourcesRead,
-    jobs: jobs.sort((a, b) => b.score - a.score || a.id.localeCompare(b.id))
+    updatedAt: now.toISOString(), officialSnapshotDate: pool.asOf, target, threshold, sourcesRead,
+    jobs: jobs.sort((a, b) => Number(b.track === '国央企职能') - Number(a.track === '国央企职能') || b.score - a.score || a.id.localeCompare(b.id))
   };
   await writeFile(fromRoot('jobs.json.tmp'), JSON.stringify(data, null, 2) + '\n');
   await rename(fromRoot('jobs.json.tmp'), fromRoot('jobs.json'));

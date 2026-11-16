@@ -40,7 +40,7 @@ summary{cursor:pointer}
 </head>
 <body>
 <header><div class="wrap hero">
-  <div><div class="eyebrow">牛客 · 求职看板</div><h1>牛客岗位匹配</h1><p>优先覆盖国央企职能、市场营销、公关与政府事务。70 分起进入投递清单。</p></div>
+  <div><div class="eyebrow">牛客 · 求职看板</div><h1>牛客岗位匹配</h1><p>优先筛选国央企职能岗，每日目标 40 个。70 分起进入投递清单。</p></div>
   <p class="date">最后更新时间<br><time id="updated">读取中</time></p>
 </div></header>
 <main class="wrap">
@@ -55,12 +55,12 @@ summary{cursor:pointer}
     <label>企业<select id="company"><option value="">全部企业</option></select></label>
     <label>最低匹配分<input id="minScore" type="number" min="0" max="100" value="0"></label>
     <label>投递状态<select id="status"><option value="">全部状态</option></select></label>
-    <label>排序<select id="sort"><option value="score-down">匹配分从高到低</option><option value="score-up">匹配分从低到高</option><option value="city">地点</option><option value="company">企业</option></select></label>
+    <label>排序<select id="sort"><option value="score-down">国央企职能优先</option><option value="score-up">匹配分从低到高</option><option value="city">地点</option><option value="company">企业</option></select></label>
     <label class="toggle"><input id="queue" type="checkbox" checked> 仅看投递清单</label>
   </section>
   <div class="toolbar"><p id="notice" aria-live="polite">正在读取岗位…</p><button id="reset">重置筛选</button></div>
   <section class="grid" id="cards" aria-label="岗位列表"></section>
-  <footer><details><summary>匹配和投递状态说明</summary><p>评分基于岗位标题、JD 能力覆盖和资料差距。请在牛客核对毕业届别、在岗时长和最新开放状态。「一键投递」打开牛客岗位页，请点击「立即申请」，选择推荐简历并手动提交。状态由你手动更新，保存在当前浏览器。</p></details><p><a href="https://www.nowcoder.com/jobs/school/schedule?propertyId=2830&amp;typeId=0" target="_blank" rel="noopener noreferrer">查看牛客国央企校招日程</a></p><p id="storageMessage" role="status"></p></footer>
+  <footer><details><summary>匹配和投递状态说明</summary><p>评分基于岗位标题、JD 能力覆盖和资料差距。请在牛客核对毕业届别、在岗时长和最新开放状态。「一键投递」打开招聘页面，请核对在招状态，选择推荐简历并手动提交。牛客授权岗位库的职位状态以招聘方页面为准。状态由你手动更新，保存在当前浏览器。</p></details><p><a href="https://www.nowcoder.com/jobs/school/schedule?propertyId=2830&amp;typeId=0" target="_blank" rel="noopener noreferrer">查看牛客国央企校招日程</a></p><p id="storageMessage" role="status"></p></footer>
 </main>
 <!-- JOBS_SNAPSHOT -->
 <script>
@@ -104,7 +104,7 @@ function card(job) {
   const article = el('article', undefined, qualified ? 'high' : '');
   const head = el('div', undefined, 'cardhead');
   const name = el('div');
-  name.append(el('p', [job.company, job.cities.join(' / '), job.type, job.track || '其他'].join(' · '), 'meta'), el('h2', job.title));
+  name.append(el('p', [job.company, job.cities.join(' / '), job.type, job.track || '其他', job.officialStatus].join(' · '), 'meta'), el('h2', job.title));
   const points = el('span', job.score, 'score');
   points.setAttribute('aria-label', '匹配分 ' + job.score);
   head.append(name, points);
@@ -130,7 +130,7 @@ function card(job) {
     apply.href = job.url;
     apply.target = '_blank';
     apply.rel = 'noopener noreferrer';
-    apply.title = '打开牛客后，选择' + job.resume + '并手动提交';
+    apply.title = '打开招聘页面后，选择' + job.resume + '并手动提交';
     actions.append(apply);
   }
   if (finished) {
@@ -166,14 +166,15 @@ function render() {
     (!company || job.company === company) && (!track || (job.track || '其他') === track) && (!status || statusFor(job.id) === status)
   );
   const compare = {
-    'score-down': (a, b) => b.score - a.score,
+    'score-down': (a, b) => Number(b.track === '国央企职能') - Number(a.track === '国央企职能') || b.score - a.score,
     'score-up': (a, b) => a.score - b.score,
     city: (a, b) => collator.compare(a.cities[0], b.cities[0]),
     company: (a, b) => collator.compare(a.company, b.company)
   };
   jobs.sort(compare[sort]);
   byId('notice').textContent = '显示 ' + jobs.length + ' 个岗位' +
-    (data.jobs.length < data.target ? ' · 本批可用岗位少于 ' + data.target + ' 个' : '');
+    ' · 日筛选目标 ' + data.target + ' 个' +
+    (data.jobs.length < data.target ? ' · 本批来源不足' : '');
   byId('submitted').textContent = data.jobs.filter(job => statusFor(job.id) === 'done').length;
   byId('cards').replaceChildren(...(jobs.length ? jobs.map(card) : [el('p', '没有符合筛选条件的岗位。', 'empty')]));
 }
@@ -186,7 +187,12 @@ async function start() {
     if (!response.ok) throw new Error('HTTP ' + response.status);
     data = await response.json();
   }
-  data.jobs = data.jobs.filter(job => /^\d+$/.test(job.id) && job.url === 'https://www.nowcoder.com/jobs/detail/' + job.id);
+data.jobs = data.jobs.filter(job => {
+  if (/^\d+$/.test(job.id)) return job.url === 'https://www.nowcoder.com/jobs/detail/' + job.id;
+  try {
+    return /^nowclaw:\d+$/.test(job.id) && job.source === 'nowclaw' && new URL(job.url).protocol === 'https:';
+  } catch { return false; }
+});
   byId('updated').dateTime = data.updatedAt;
   byId('updated').textContent = new Intl.DateTimeFormat('zh-CN', {
     timeZone: 'Asia/Hong_Kong', dateStyle: 'medium', timeStyle: 'short'
@@ -194,6 +200,10 @@ async function start() {
   byId('total').textContent = data.jobs.length;
   byId('qualified').textContent = data.jobs.filter(job => job.score >= data.threshold).length;
   fill('track', ['国央企职能', '职能岗', '市场营销', '公关', '政府事务／公共事务', '其他']);
+  if (data.jobs.some(job => job.track === '国央企职能')) {
+    byId('track').value = '国央企职能';
+    byId('queue').checked = false;
+  }
   fill('company', data.jobs.map(job => job.company));
   fill('city', data.jobs.flatMap(job => job.cities));
   for (const [value, text] of Object.entries(states)) byId('status').add(option(value, text));
