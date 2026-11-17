@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-17T02:24:16.387Z",
-  "officialSnapshotDate": "2026-11-16",
+  "updatedAt": "2026-11-17T14:33:37.643Z",
+  "officialSnapshotDate": "2026-11-17",
   "target": 40,
   "threshold": 70,
   "sourcesRead": 0,
@@ -30,6 +30,31 @@
       ],
       "gaps": [
         "独立运营小红书",
+        "核对毕业届别（27届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:75652",
+      "title": "宣传干事",
+      "company": "中国东方电气集团有限公司",
+      "cities": [
+        "成都"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://www.iguopin.com/job/detail?id=195024114728046183",
+      "source": "nowclaw",
+      "officialStatus": "官网在招待核对",
+      "score": 95,
+      "reasons": [
+        "中文与传媒",
+        "内容策划与采编",
+        "文案与品牌传播",
+        "公众号与视频号"
+      ],
+      "gaps": [
+        "抖音账号实操",
         "核对毕业届别（27届）"
       ],
       "resume": "内容与传播版"
@@ -89,32 +114,6 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:193286",
-      "title": "人力资源岗(组织与人才管理方向)",
-      "company": "中国联通新苗计划",
-      "cities": [
-        "杭州·萧山区"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890705905",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 91,
-      "reasons": [
-        "文案与品牌传播",
-        "数据复盘",
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "硕士毕业或学历要求",
-        "核对毕业届别（27届）"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
       "id": "nowclaw:233451",
       "title": "纪检监察-东风机关",
       "company": "东风奕派汽车科技公司",
@@ -139,27 +138,25 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:193151",
-      "title": "综合秘书",
-      "company": "中国联通新苗计划",
+      "id": "nowclaw:262102",
+      "title": "公共事务专员(J10449)",
+      "company": "上海医药",
       "cities": [
-        "阿勒泰·阿勒泰市"
+        "上海市·徐汇区"
       ],
       "track": "国央企职能",
       "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890601405",
+      "url": "https://sph.zhiye.com/campus/detail?jobAdId=28b0f9e5-609b-4c3e-a6ec-cee24d1e1643",
       "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
       "officialStatus": "官网在招待核对",
-      "score": 90,
+      "score": 91,
       "reasons": [
-        "中文与传媒",
+        "文案与品牌传播",
         "跨团队协作",
         "Office 办公"
       ],
       "gaps": [
-        "核对毕业届别（27届）",
-        "核对对口专业"
+        "政策研究与解读"
       ],
       "resume": "内容与传播版"
     },
@@ -219,31 +216,6 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:202109",
-      "title": "纪检管理",
-      "company": "国机重装",
-      "cities": [
-        "镇江市"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://wecruit.hotjob.cn/SU66c20abb1c240e39b5c2ff61/mc/detail?postId=6a95539ae804fa0faef54536&recruitType=campus",
-      "source": "nowclaw",
-      "deadline": "招满为止（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 84,
-      "reasons": [
-        "文案与品牌传播",
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "硕士毕业或学历要求",
-        "核对毕业届别（27届）"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
       "id": "nowclaw:203768",
       "title": "人力资源",
       "company": "中国电信集团",
@@ -299,26 +271,25 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:192475",
-      "title": "综合文秘",
-      "company": "中国联通新苗计划",
+      "id": "nowclaw:128812",
+      "title": "人保寿险-上海分公司-综合类-党建工作岗/党委宣传岗-2027届校招(J78992)",
+      "company": "中国人民保险集团",
       "cities": [
-        "淮北·相山区"
+        "上海市"
       ],
       "track": "国央企职能",
       "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890403605",
+      "url": "https://picc.zhiye.com/campus/detail?jobAdId=b34e5b3f-0bb2-4783-96db-a099a47c282b",
       "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
+      "deadline": "2027-04-25",
       "officialStatus": "官网在招待核对",
-      "score": 79,
+      "score": 78,
       "reasons": [
         "文案与品牌传播",
-        "跨团队协作"
+        "Office 办公"
       ],
       "gaps": [
-        "核对毕业届别（27届、2026届、2027届）",
-        "核对对口专业"
+        "核对毕业届别（2027届、27届）"
       ],
       "resume": "内容与传播版"
     },
@@ -350,44 +321,17 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:191659",
-      "title": "人力资源管理岗位",
-      "company": "中国联通新苗计划",
+      "id": "nowclaw:147866",
+      "title": "人保寿险-山东分公司-综合类-党建工作岗/党委宣传岗-2027届校招（省本部）(J80338)",
+      "company": "中国人民保险集团",
       "cities": [
-        "柳州"
+        "山东省"
       ],
       "track": "国央企职能",
       "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890256905",
+      "url": "https://picc.zhiye.com/campus/detail?jobAdId=92a32295-84fc-4f58-a7e8-a79bf213722a",
       "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 76,
-      "reasons": [
-        "数据复盘",
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "电商与商品实操",
-        "人力或员工关系实操",
-        "核对毕业届别（27届）",
-        "核对对口专业"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "nowclaw:193551",
-      "title": "信息化支撑兼党建专员",
-      "company": "中国联通新苗计划",
-      "cities": [
-        "哈尔滨·南岗区"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890343605",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
+      "deadline": "2027-04-25",
       "officialStatus": "官网在招待核对",
       "score": 76,
       "reasons": [
@@ -395,33 +339,8 @@
         "跨团队协作"
       ],
       "gaps": [
-        "硕士毕业或学历要求",
-        "核对毕业届别（27届）",
-        "核对对口专业"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "nowclaw:193625",
-      "title": "管线综合管理岗（信阳）",
-      "company": "中国联通新苗计划",
-      "cities": [
-        "信阳"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890767705",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 73,
-      "reasons": [
-        "数据复盘",
-        "跨团队协作"
-      ],
-      "gaps": [
-        "核对毕业届别（27届）",
-        "核对对口专业"
+        "人力或员工关系实操",
+        "核对毕业届别（2027届、27届）"
       ],
       "resume": "内容与传播版"
     },
@@ -503,6 +422,29 @@
       "resume": "内容与传播版"
     },
     {
+      "id": "nowclaw:249331",
+      "title": "玉柴船电-人力资源",
+      "company": "玉柴集团",
+      "cities": [
+        "玉林·玉州区"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://app.mokahr.com/campus-recruitment/yuchai/140075?locale=zh-CN#/job/685682d3-4159-4d87-856c-9616d0aeda88",
+      "source": "nowclaw",
+      "officialStatus": "官网在招待核对",
+      "score": 71,
+      "reasons": [
+        "英语沟通",
+        "Office 办公"
+      ],
+      "gaps": [
+        "AI／AIGC 工作流",
+        "人力或员工关系实操"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
       "id": "nowclaw:254576",
       "title": "综合管理岗",
       "company": "通号低空公司",
@@ -525,6 +467,32 @@
         "硕士毕业或学历要求",
         "核对毕业届别（27届）",
         "核对对口专业"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:130214",
+      "title": "人保财险-宁夏分公司-综合类-党委宣传岗（省分公司本部）-2027届校招(J79875)",
+      "company": "中国人民保险集团",
+      "cities": [
+        "宁夏回族自治区·银川市"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://picc.zhiye.com/campus/detail?jobAdId=aa6fee2b-f86a-40c6-98a7-538b3cdb2cc0",
+      "source": "nowclaw",
+      "deadline": "2027-04-25",
+      "officialStatus": "官网在招待核对",
+      "score": 69,
+      "reasons": [
+        "文案与品牌传播",
+        "跨团队协作"
+      ],
+      "gaps": [
+        "硕士毕业或学历要求",
+        "核对政治面貌要求",
+        "核对毕业届别（2027届、27届）",
+        "党员资格先核实"
       ],
       "resume": "内容与传播版"
     },
@@ -554,98 +522,22 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:173473",
-      "title": "党建管理岗（党建方向）",
-      "company": "金航数码",
-      "cities": [
-        "北京"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC000402820J41020217402",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 69,
-      "reasons": [
-        "文案与品牌传播",
-        "Office 办公"
-      ],
-      "gaps": [
-        "核对政治面貌要求",
-        "核对毕业届别（27届）",
-        "党员资格先核实"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "nowclaw:173474",
-      "title": "纪检岗",
-      "company": "金航数码",
-      "cities": [
-        "北京"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC000402820J41020217702",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 69,
-      "reasons": [
-        "文案与品牌传播",
-        "Office 办公"
-      ],
-      "gaps": [
-        "核对政治面貌要求",
-        "核对毕业届别（27届）",
-        "党员资格先核实"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "nowclaw:192729",
-      "title": "党建事务岗",
+      "id": "nowclaw:229531",
+      "title": "党务干事",
       "company": "中国联通新苗计划",
       "cities": [
-        "肇庆·端州区"
+        "北京"
       ],
       "track": "国央企职能",
       "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890486205",
+      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40895285805",
       "source": "nowclaw",
       "deadline": "尽快投递（截止时间待核对）",
       "officialStatus": "官网在招待核对",
       "score": 69,
       "reasons": [
         "中文与传媒",
-        "文案与品牌传播",
-        "跨团队协作"
-      ],
-      "gaps": [
-        "核对毕业届别（27届）",
-        "党员资格先核实",
-        "核对对口专业"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "nowclaw:193474",
-      "title": "纪检监察员",
-      "company": "中国联通新苗计划",
-      "cities": [
-        "昆明"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890898205",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 69,
-      "reasons": [
-        "文案与品牌传播",
-        "跨团队协作"
+        "文案与品牌传播"
       ],
       "gaps": [
         "核对政治面貌要求",
@@ -683,81 +575,6 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:173467",
-      "title": "党建管理岗（党务方向）",
-      "company": "金航数码",
-      "cities": [
-        "北京"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC000402820J41020217302",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 67,
-      "reasons": [
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "核对政治面貌要求",
-        "核对毕业届别（27届）",
-        "党员资格先核实"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "nowclaw:191636",
-      "title": "人力资源管理岗位",
-      "company": "中国联通新苗计划",
-      "cities": [
-        "梧州"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890253805",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 67,
-      "reasons": [
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "人力或员工关系实操",
-        "核对毕业届别（27届）",
-        "核对对口专业"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
-      "id": "nowclaw:191645",
-      "title": "人力资源管理岗位",
-      "company": "中国联通新苗计划",
-      "cities": [
-        "百色"
-      ],
-      "track": "国央企职能",
-      "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890255505",
-      "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
-      "officialStatus": "官网在招待核对",
-      "score": 67,
-      "reasons": [
-        "跨团队协作",
-        "Office 办公"
-      ],
-      "gaps": [
-        "人力或员工关系实操",
-        "核对毕业届别（27届）",
-        "核对对口专业"
-      ],
-      "resume": "内容与传播版"
-    },
-    {
       "id": "nowclaw:200482",
       "title": "综合支撑-人力资源",
       "company": "中国电信集团",
@@ -783,26 +600,49 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:202103",
-      "title": "人力资源管理（重机公司）",
-      "company": "国机重装",
+      "id": "nowclaw:128826",
+      "title": "人保寿险-新疆分公司-综合类-党建工作岗/党委宣传岗-2027届校招(J79090)",
+      "company": "中国人民保险集团",
       "cities": [
-        "德阳市-旌阳区"
+        "新疆维吾尔自治区·乌鲁木齐市"
       ],
       "track": "国央企职能",
       "type": "校招",
-      "url": "https://wecruit.hotjob.cn/SU66c20abb1c240e39b5c2ff61/mc/detail?postId=6a95539b829af219b7d33924&recruitType=campus",
+      "url": "https://picc.zhiye.com/campus/detail?jobAdId=c9efc1ce-6b71-4741-9702-c1aeea0f86e4",
       "source": "nowclaw",
-      "deadline": "招满为止（截止时间待核对）",
+      "deadline": "2027-04-25",
       "officialStatus": "官网在招待核对",
-      "score": 67,
+      "score": 62,
       "reasons": [
-        "跨团队协作",
-        "Office 办公"
+        "文案与品牌传播"
       ],
       "gaps": [
-        "硕士毕业或学历要求",
-        "核对毕业届别（27届）"
+        "人力或员工关系实操",
+        "核对毕业届别（2027届、27届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:128946",
+      "title": "人保寿险-江苏省分公司-综合类-党建工作岗/党委宣传岗-2027届校招(J79381)",
+      "company": "中国人民保险集团",
+      "cities": [
+        "江苏省·南京市"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://picc.zhiye.com/campus/detail?jobAdId=79d02b4e-8e43-40b3-bb01-cd9e092dae18",
+      "source": "nowclaw",
+      "deadline": "2027-04-25",
+      "officialStatus": "官网在招待核对",
+      "score": 62,
+      "reasons": [
+        "文案与品牌传播"
+      ],
+      "gaps": [
+        "核对政治面貌要求",
+        "核对毕业届别（2027届、27届）",
+        "党员资格先核实"
       ],
       "resume": "内容与传播版"
     },
@@ -876,54 +716,65 @@
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:202102",
-      "title": "人力资源管理",
-      "company": "国机重装",
+      "id": "nowclaw:200500",
+      "title": "市场营销岗",
+      "company": "中国电信集团",
       "cities": [
-        "德阳市-旌阳区"
+        "深圳市"
       ],
       "track": "国央企职能",
       "type": "校招",
-      "url": "https://wecruit.hotjob.cn/SU66c20abb1c240e39b5c2ff61/mc/detail?postId=6a95539c829af219b7d3392b&recruitType=campus",
+      "url": "https://job.chinatelecom.com.cn/wt/TELE/web/index#/postinquiry?data=eyJwb3N0TmFtZSI6IuW4guWcuuiQpemUgOWylyIsInR5cGUiOiIxIiwiZmlsdGVycyI6eyJ3b3JrQ2l0eSI6IiIsInBvc3RUeXBlIjoiIiwib3JnIjoiW1wiNTgxNjQzXCJdIn0sInJlY3J1aXRQcm9qZWN0IjoiIiwicmVjcnVpdFByb2plY3ROYW1lIjoiIn0%3D&postId=139923",
       "source": "nowclaw",
       "deadline": "招满为止（截止时间待核对）",
       "officialStatus": "官网在招待核对",
       "score": 62,
       "reasons": [
-        "跨团队协作",
-        "Office 办公"
+        "文案与品牌传播"
       ],
       "gaps": [
-        "人力或员工关系实操",
         "硕士毕业或学历要求",
-        "核对政治面貌要求",
         "核对毕业届别（27届）",
-        "党员资格先核实"
+        "核对对口专业"
       ],
       "resume": "内容与传播版"
     },
     {
-      "id": "nowclaw:192705",
-      "title": "人力资源岗",
-      "company": "中国联通新苗计划",
+      "id": "nowclaw:249484",
+      "title": "茂名中晟公司—党务管理",
+      "company": "玉柴集团",
       "cities": [
-        "云浮"
+        "广西"
       ],
       "track": "国央企职能",
       "type": "校招",
-      "url": "https://xiaoyuan.zhaopin.com/job/CC145093010J40890483405",
+      "url": "https://app.mokahr.com/campus-recruitment/yuchai/140075?locale=zh-CN#/job/38e7c78b-d708-4c3c-9f70-eb2a8a8eab1a",
       "source": "nowclaw",
-      "deadline": "尽快投递（截止时间待核对）",
       "officialStatus": "官网在招待核对",
-      "score": 60,
+      "score": 62,
       "reasons": [
-        "公众号与视频号"
+        "文案与品牌传播"
       ],
-      "gaps": [
-        "核对政治面貌要求",
-        "核对毕业届别（27届）",
-        "核对对口专业"
+      "gaps": [],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:249495",
+      "title": "茂名中晟公司—党务管理",
+      "company": "玉柴集团",
+      "cities": [
+        "茂名市"
       ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://app.mokahr.com/campus-recruitment/yuchai/140075?locale=zh-CN#/job/f574fe26-58e1-4685-9bea-d214149cd09b",
+      "source": "nowclaw",
+      "officialStatus": "官网在招待核对",
+      "score": 62,
+      "reasons": [
+        "文案与品牌传播"
+      ],
+      "gaps": [],
       "resume": "内容与传播版"
     },
     {
@@ -1013,6 +864,118 @@
         "英语沟通"
       ],
       "gaps": [
+        "核对毕业届别（27届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:233435",
+      "title": "市场营销岗-东风卓联",
+      "company": "东风奕派汽车科技公司",
+      "cities": [
+        "武汉市"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://app.mokahr.com/campus-recruitment/dfmc/164438?locale=zh-CN#/job/042e4da5-382f-4887-bac6-1ca486b0fe1d",
+      "source": "nowclaw",
+      "deadline": "招满为止（截止时间待核对）",
+      "officialStatus": "官网在招待核对",
+      "score": 55,
+      "reasons": [
+        "英语沟通"
+      ],
+      "gaps": [
+        "核对毕业届别（27届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:233453",
+      "title": "党群综合专员-东风股份",
+      "company": "东风奕派汽车科技公司",
+      "cities": [
+        "武汉市"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://app.mokahr.com/campus-recruitment/dfmc/164438?locale=zh-CN#/job/d0f747ac-1fe9-47b9-b874-a03a79b2f4e3",
+      "source": "nowclaw",
+      "deadline": "招满为止（截止时间待核对）",
+      "officialStatus": "官网在招待核对",
+      "score": 55,
+      "reasons": [
+        "英语沟通"
+      ],
+      "gaps": [
+        "核对毕业届别（27届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:233461",
+      "title": "市场运营与品牌公关专员-东风股份",
+      "company": "东风奕派汽车科技公司",
+      "cities": [
+        "武汉市"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://app.mokahr.com/campus-recruitment/dfmc/164438?locale=zh-CN#/job/dbd6b5a2-7ef9-4cde-85e3-1a415511b3fe",
+      "source": "nowclaw",
+      "deadline": "招满为止（截止时间待核对）",
+      "officialStatus": "官网在招待核对",
+      "score": 55,
+      "reasons": [
+        "英语沟通"
+      ],
+      "gaps": [
+        "核对毕业届别（27届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:197993",
+      "title": "行政岗",
+      "company": "北京燕东微电子股份有限公司",
+      "cities": [
+        "北京"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://app.mokahr.com/campus-recruitment/dkjc/142338?locale=zh-CN#/job/a8e5d419-7f2a-4864-a78c-755d69d5fb42",
+      "source": "nowclaw",
+      "deadline": "尽快投递（截止时间待核对）",
+      "officialStatus": "官网在招待核对",
+      "score": 52,
+      "reasons": [
+        "跨团队协作"
+      ],
+      "gaps": [
+        "核对毕业届别（27届）"
+      ],
+      "resume": "内容与传播版"
+    },
+    {
+      "id": "nowclaw:249146",
+      "title": "人力资源岗",
+      "company": "北京燕东微电子股份有限公司",
+      "cities": [
+        "通州区"
+      ],
+      "track": "国央企职能",
+      "type": "校招",
+      "url": "https://app.mokahr.com/campus-recruitment/dkjc/142338?locale=zh-CN#/job/14ed8e2c-d200-4a98-8abd-45e639e12296",
+      "source": "nowclaw",
+      "deadline": "尽快投递（截止时间待核对）",
+      "officialStatus": "官网在招待核对",
+      "score": 52,
+      "reasons": [
+        "跨团队协作"
+      ],
+      "gaps": [
+        "人力或员工关系实操",
+        "硕士毕业或学历要求",
         "核对毕业届别（27届）"
       ],
       "resume": "内容与传播版"
